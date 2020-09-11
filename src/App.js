@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-// import './App.css';
+import './App.css';
 import {CardList} from './component/card-list/card-list.component';
 import {SearchBox} from './component/search-box/search-box.component';
 
@@ -36,13 +36,13 @@ render() {
 
     return(
       <div className="App">
-      <header className="App-header">
      
-      <center><SearchBox placeholder="Search Monster" 
-      handlechange={e =>this.setState({searchField: e.target.value})}/></center>
+      <h1 className="h1">Monster</h1>
+      <SearchBox placeholder="Search Monster" 
+      handlechange={e =>this.setState({searchField: e.target.value})}/>
       <CardList monsters={filtermonster}></CardList>
        
-      </header>
+     
   </div>
     )
   }
